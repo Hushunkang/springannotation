@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
  * @author hskBeginner Email：2752962035@qq.com
  * @version 1.0
  * @description
- * @create 2020年04月08日 12时58分54秒
+ * @create 2020年04月08日
  */
 @Configuration//告诉spring，这是一个配置类，就相当于一个spring的xml配置文件
 //@ComponentScan//这个注解默认的包，扫描的是当前类所在包及其子包，即此处的@ComponentScan等价于@ComponentScan("com.atguigu.config")
@@ -31,5 +31,6 @@ public class MainConfig {
 
     //说明：不管你的@ComponentScan注解怎么配置，spring ioc容器里面始终有mainConfig和person008这两个bean
     //结论：@ComponentScan这个注解表示只要是标注了@Component、@Controller、@Service、@Repository的Bean都会被注册到spring ioc容器里面，但是它对@Configuration、@Bean不起作用
+    //todo 04、组件注册-自定义TypeFilter指定过滤规则
 
 }
